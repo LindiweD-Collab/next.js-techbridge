@@ -1,34 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  @apply font-sans;
+  @apply text-gray-900;
+  @apply bg-white;
 }
 
 header ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  padding: 1rem;
-  background: #000;
-  color: #fff;
+  @apply flex;
+  @apply justify-between;
+  @apply py-4;
+  @apply bg-gray-900;
+  @apply text-gray-100;
 }
 
 .hero {
-  text-align: center;
-  color: white;
-  padding: 50px;
+  @apply text-center;
+  @apply text-white;
+  @apply py-20;
+  @apply bg-cover;
+  @apply bg-center;
 }
 
 .video-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply w-full;
+  @apply h-full;
+  @apply object-cover;
+  @apply z-0;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  @apply flex;
+  @apply flex-col;
+  @apply items-center;
+  @apply p-4;
+  @apply bg-white;
+  @apply rounded;
+  @apply shadow-md;
 }
