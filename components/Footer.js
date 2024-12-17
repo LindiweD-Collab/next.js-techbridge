@@ -1,6 +1,4 @@
-Here's an example of how you can style the `Footer` component using TypeScript and make it look appealing:
 
-```
 import React from 'react';
 
 interface FooterProps {}
